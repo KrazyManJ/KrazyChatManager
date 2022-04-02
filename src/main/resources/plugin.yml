@@ -1,0 +1,5 @@
+name: KrazyChatFilter
+author: KrazyManJ
+version: 1.0.0
+main: me.KrazyManJ.KrazyChatFilter.Main
+api-version: 1.17
