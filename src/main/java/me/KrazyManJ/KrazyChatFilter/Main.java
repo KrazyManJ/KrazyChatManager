@@ -1,5 +1,7 @@
 package me.KrazyManJ.KrazyChatFilter;
 
+import me.KrazyManJ.KrazyChatFilter.Listener.ChatListener;
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
@@ -8,6 +10,7 @@ public class Main extends JavaPlugin {
     @Override
     public void onEnable() {
         instance = this;
+        Bukkit.getPluginManager().registerEvents(new ChatListener(), this);
     }
 
     @Override
